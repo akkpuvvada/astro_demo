@@ -17,7 +17,7 @@ const TableRow: React.FC<TableRowProps> = ({ rowData, columns }) => {
         // If this column is "tag", render it as a circular badge
         if (col.key === "tag") {
           cellContent = (
-            <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full bg-mint-${rowData[col.key]}00 text-white`}>
+            <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full bg-mint-${rowData[col.key]}00 text-black font-semibold`}>
               {rowData[col.key]}
             </span>
           );
@@ -38,7 +38,7 @@ const TableRow: React.FC<TableRowProps> = ({ rowData, columns }) => {
             : "";
 
         return (
-          <td key={col.key} className={`px-3 py-1 text-gray-700 text-s ${centerCell}`}>
+          <td key={col.key} className={`px-1 py-2 text-gray-700 text-xs ${centerCell} font-semibold `}>
             {cellContent}
           </td>
         );

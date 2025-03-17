@@ -14,7 +14,7 @@ const TableHeader: React.FC<TableHeaderProps> = ({ columns, firstCellClassName }
           <th
             key={col.key}
             scope="col"
-            className={` py-0.75 text-s text-center whitespace-nowrap ${index === 0 && firstCellClassName ? firstCellClassName : ""} ${col.className || ""}`}
+            className={` p-1 text-s text-center whitespace-nowrap ${index === 0 && firstCellClassName ? firstCellClassName : ""} ${col.className || ""}`}
           >
             {col.label}
           </th>
