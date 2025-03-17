@@ -5,7 +5,7 @@
 
 # Result
 
-![Result](./result.png)
+![Result](./image.png)
 
 ## 🧞 Commands
 
