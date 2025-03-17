@@ -3,11 +3,12 @@ import type { Column } from "../types";
 
 interface TableHeaderProps {
   columns: Column[];
+  firstCellClassName?: string;
 }
 
 const TableHeader: React.FC<TableHeaderProps> = ({ columns }) => {
   return (
-    <thead className="bg-gray-50 border-b text-gray-600">
+    <thead className="bg-gray-50 border-b border-gray-200 text-gray-600">
       <tr>
         {columns.map((col) => (
           <th
