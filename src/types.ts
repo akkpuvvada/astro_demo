@@ -7,3 +7,15 @@ export interface TableRow {
     notes: string;
     hyperlink: string;
 }
+
+
+export interface Column {
+  key: string;
+  label: string;
+  className?: string;
+}
+
+
+export interface TableRowData {
+    [key: string]: any;
+  }
