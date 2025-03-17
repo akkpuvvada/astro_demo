@@ -15,7 +15,7 @@ const InfoTable: React.FC<InfoTableProps> = ({ title, columns, data, headerFirst
   return (
     <div>
       <div className="flex items-center justify-between mb-1">
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1">
           <h2 className="text-xl font-semibold">{title}</h2>
           <button
             type="button"
@@ -30,7 +30,7 @@ const InfoTable: React.FC<InfoTableProps> = ({ title, columns, data, headerFirst
         {/* Right side: Ellipsis button */}
         <button
           type="button"
-          className="p-2 rounded-full hover:bg-gray-100 text-gray-500 hover:text-gray-700 focus:outline-none"
+          className="rounded-full hover:bg-gray-100 text-gray-500 hover:text-gray-700 focus:outline-none"
           aria-label="Options"
         >
           {/* Horizontal three-dot icon */}
