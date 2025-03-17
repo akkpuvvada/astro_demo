@@ -38,7 +38,7 @@ const TableRow: React.FC<TableRowProps> = ({ rowData, columns }) => {
             : "";
 
         return (
-          <td key={col.key} className={`px-1 py-2 text-gray-700 text-xs ${centerCell} font-semibold `}>
+          <td key={col.key} className={`px-1 py-2 text-gray-700 text-s max-w-[200px] ${centerCell} `}>
             {cellContent}
           </td>
         );
