@@ -1,4 +1,4 @@
-import type { TableRow } from "../types";
+import type { TableRow } from "./types";
 
 // Sample data for "Corporate information"
 export const corporateData: TableRow[] = [
