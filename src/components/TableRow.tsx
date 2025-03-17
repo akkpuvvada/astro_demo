@@ -8,7 +8,7 @@ interface TableRowProps {
 
 const TableRow: React.FC<TableRowProps> = ({ rowData, columns }) => {
   return (
-    <tr className="border-b border-gray-200 last:border-0">
+    <tr className="border-b border-gray-200 last:border-0 divide-x divide-slate-300">
       {columns.map((col) => (
         <td key={col.key} className="px-4 py-3">
           {rowData[col.key]}
