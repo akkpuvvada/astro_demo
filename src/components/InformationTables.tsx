@@ -9,7 +9,7 @@ const columns = [
   { key: "tag", label: "Tag" },
   { key: "index", label: "Index" },
   { key: "notes", label: "Notes" },
-  { key: "hyperlink", label: "Hyperlink", className: "text-blue-600 underline cursor-pointer" },
+  { key: "hyperlink", label: "Hyperlink" },
 ];
 
 const InformationTables: React.FC = () => {

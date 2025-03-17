@@ -1,5 +1,6 @@
 import React from "react";
 import type { TableRowData } from "../types";
+import "../styles/global.css"
 
 interface TableRowProps {
   rowData: TableRowData;
@@ -16,7 +17,7 @@ const TableRow: React.FC<TableRowProps> = ({ rowData, columns }) => {
         // If this column is "tag", render it as a circular badge
         if (col.key === "tag") {
           cellContent = (
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-500 text-white">
+            <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full bg-mint-${rowData[col.key]}00 text-white`}>
               {rowData[col.key]}
             </span>
           );
