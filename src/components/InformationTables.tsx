@@ -20,7 +20,7 @@ const InformationTables: React.FC = () => {
           title="Corporate Information"
           columns={columns}
           data={corporateData}
-          headerFirstCellClassName="bg-blue-500 border-b border-blue-700 text-white"
+          headerFirstCellClassName="bg-mint-500 border-b border-indigo-600 text-white"
         />
       </div>
       <div className="bg-white shadow rounded-lg p-6 mb-8">
@@ -28,7 +28,7 @@ const InformationTables: React.FC = () => {
           title="Financial Information"
           columns={columns}
           data={financialData}
-          headerFirstCellClassName="bg-blue-500 border-b border-blue-700 text-white"
+          headerFirstCellClassName="bg-mint-500 border-b border-indigo-600 text-white"
         />
       </div>
     </div>

@@ -9,7 +9,7 @@ interface TableHeaderProps {
 const TableHeader: React.FC<TableHeaderProps> = ({ columns, firstCellClassName }) => {
   return (
     <thead className="bg-gray-50 border-b border-gray-200 text-gray-600">
-      <tr>
+      <tr className="divide-x divide-slate-200">
         {columns.map((col, index) => (
           <th
             key={col.key}
