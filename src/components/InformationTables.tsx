@@ -16,10 +16,20 @@ const InformationTables: React.FC = () => {
   return (
     <div className="w-full mx-auto p-4">
       <div className="bg-white shadow rounded-lg p-6 mb-8">
-        <InfoTable title="Corporate Information" columns={columns} data={corporateData} />
+        <InfoTable
+          title="Corporate Information"
+          columns={columns}
+          data={corporateData}
+          headerFirstCellClassName="bg-blue-500 border-b border-blue-700 text-white"
+        />
       </div>
       <div className="bg-white shadow rounded-lg p-6 mb-8">
-        <InfoTable title="Financial Information" columns={columns} data={financialData} />
+        <InfoTable
+          title="Financial Information"
+          columns={columns}
+          data={financialData}
+          headerFirstCellClassName="bg-blue-500 border-b border-blue-700 text-white"
+        />
       </div>
     </div>
   );

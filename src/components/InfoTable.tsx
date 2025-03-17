@@ -7,15 +7,16 @@ interface InfoTableProps {
   title: string;
   columns: Column[];
   data: TableRowData[];
+  headerFirstCellClassName?: string;
 }
 
-const InfoTable: React.FC<InfoTableProps> = ({ title, columns, data }) => {
+const InfoTable: React.FC<InfoTableProps> = ({ title, columns, data, headerFirstCellClassName }) => {
   return (
-    <div className="mb-8">
+    <div>
       <h2 className="text-xl font-semibold mb-4">{title}</h2>
       <div className="overflow-x-auto border rounded-lg">
         <table className="min-w-full text-sm text-gray-700">
-          <TableHeader columns={columns} />
+          <TableHeader columns={columns} firstCellClassName={headerFirstCellClassName} />
           <tbody>
             {data.map((row, index) => (
               <TableRow key={index} rowData={row} columns={columns} />
