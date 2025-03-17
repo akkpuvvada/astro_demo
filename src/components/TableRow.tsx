@@ -25,14 +25,20 @@ const TableRow: React.FC<TableRowProps> = ({ rowData, columns }) => {
 
         if (col.key === "hyperlink") {
           cellContent = (
-            <span className="text-violet-600 font-semibold cursor-pointer">
+            <span className="text-violet-600 items-center justify-center font-semibold cursor-pointer whitespace-nowrap">
               {rowData[col.key]}
             </span>
           );
         }
 
+        // Apply center alignment only to "tag" and "hyperlink" cells
+        const centerCell =
+          col.key === "tag" || col.key === "hyperlink"
+            ? "text-center align-middle"
+            : "";
+
         return (
-          <td key={col.key} className="px-2 py-1 text-gray-700">
+          <td key={col.key} className={`px-3 py-1 text-gray-700 text-s ${centerCell}`}>
             {cellContent}
           </td>
         );
