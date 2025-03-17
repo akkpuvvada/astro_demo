@@ -22,6 +22,14 @@ const TableRow: React.FC<TableRowProps> = ({ rowData, columns }) => {
           );
         }
 
+        if (col.key === "hyperlink") {
+          cellContent = (
+            <span className="text-violet-600 font-semibold cursor-pointer">
+              {rowData[col.key]}
+            </span>
+          );
+        }
+
         return (
           <td key={col.key} className="px-2 py-1 text-gray-700">
             {cellContent}
